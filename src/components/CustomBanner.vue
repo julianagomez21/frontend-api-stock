@@ -2,7 +2,7 @@
   <div class="overflow-hidden whitespace-nowrap bg-gray-900 text-white p-3 border-b-2 border-gray-700 rounded-b-lg">
     <div 
       class="flex gap-10 animate-ticker" 
-      :style="{ animationDuration: `${items.length * 4}s` }"
+      :style="{ animationDuration: `20s` }"
     >
       <div v-for="(item, index) in items" :key="item.ticker" class="flex items-center gap-3 font-bold">
         <span class="text-sm">{{ item.ticker }}</span>

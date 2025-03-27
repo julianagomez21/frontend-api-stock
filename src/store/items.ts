@@ -44,7 +44,7 @@ export const useItemsStore = defineStore('items', {
             }
         },
 
-        nextPage() {
+        nextPage() {            
             this.offset += this.limit;
             this.fetchItems();
         },
@@ -57,6 +57,15 @@ export const useItemsStore = defineStore('items', {
                 console.error("Error en fetchRecommendation:", error);
             } finally {
                 this.loading = false;
+            }
+        },
+
+        setLimit(newLimit: number) {
+            if (newLimit !== this.limit) {
+                const currentPage = Math.floor(this.offset / this.limit);
+                this.limit = newLimit;
+                this.offset = currentPage * newLimit;
+                this.fetchItems();
             }
         }
     }

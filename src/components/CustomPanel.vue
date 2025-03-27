@@ -70,12 +70,13 @@
                         <h2 class="text-lg font-semibold text-gray-900">📊 Buy, Hold, or Sell?</h2>
                         <p class="text-gray-700 mt-2">
                           Analysts provide ratings to guide investors:  
+                        </p>
                           <ul class="list-disc list-inside mt-2 text-gray-700">
                             <li><span class="font-bold text-green-600">Buy:</span> Stock is expected to increase in value.</li>
                             <li><span class="font-bold text-yellow-600">Hold:</span> Stock should be kept but not aggressively bought.</li>
                             <li><span class="font-bold text-red-600">Sell:</span> Stock is expected to decrease in value.</li>
                           </ul>
-                        </p>
+                        
                       </div>
 
                       <div class="flex justify-center my-4">

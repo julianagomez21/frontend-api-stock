@@ -158,7 +158,7 @@
           <!-- Selector de Límites -->
           <select
             v-model="store.limit"
-            @change="store.fetchItems()"
+            @change="store.setLimit(Number(store.limit))"
             class="border border-gray-200 p-2 rounded-md bg-white text-gray-500"
           >
             <option value="10">10 / page</option>
